@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+/* Estilos para el encabezado */
+header {
+    background: #045bbf2d;
+    color: #000;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos generales para el contenido principal */
+main {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 100px;
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background: #002076;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para los encabezados (h1, h2, h3) */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+/* Estilos para los párrafos */
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #045bbf2d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los formularios */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #012e8800;
+    border-radius: 5px;
+}
+
+
+/* Estilos para los botones */
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #045bbf1c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #045bbf2d;
+}
+
+/* Estilos específicos para la sección "about" */
+#about {
+    position: relative;
+    padding: 40px 20px;
+    background: url('i2.jpeg') no-repeat center center/cover;
+    color: #012F88;
+    border-radius: 0;
+    overflow: hidden;
+    border: none;
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.322);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border-radius: 0;
+}
+
+#about .about-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#about .about-text {
+    max-width: 45%;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #000;
+}
+
+#about .about-photo img {
+    width: 100%; 
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about .about-photo {
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la sección de datos personales */
+#personal-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#personal-data .data-item {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    background-color: #045bbf2d;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Estilos para los íconos */
+.fa-at,
+.fa-cake-candles,
+.fa-mobile,
+.fa-helmet-safety,
+.fa-school,
+.fa-envelope,
+.fa-house {
+    color: #000000;
+    font-size: 24px;
+}
+
+.fa-at {
+    color: #000000;
+    font-size: 24px;
+}
+
+/* Estilos para la sección de visión y misión */
+#vision-mision {
+    padding: 40px 20px;
+    background-color: #045bbf1c;
+    text-align: center;
+}
+
+#vision-mision h2 {
+    margin-bottom: 20px;
+}
+
+#vision-mision .vision-mision-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vision-mision .vision,
+#vision-mision .mision {
+    flex: 1;
+    margin: 20px;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #045bbf1c;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#vision-mision .vision h3,
+#vision-mision .mision h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#vision-mision .vision p,
+#vision-mision .mision p {
+    font-size: 16px;
+}
+
+/* Estilos responsivos para la sección de visión y misión */
+@media (min-width: 768px) {
+    #vision-mision .vision-mision-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* Estilos para la sección de gustos */
+#gustos {
+    padding: 40px 20px;
+    background-color: #045bbf1c;
+    text-align: center;
+}
+
+#gustos h2 {
+    margin-bottom: 20px;
+}
+
+#gustos .gustos-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gustos .gusto {
+    flex: 1;
+    margin: 20px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #045bbf1c;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#gustos .gusto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#gustos .gusto p {
+    font-size: 16px;
+}
+
+/* Estilos responsivos para la sección de gustos */
+@media (min-width: 768px) {
+    #gustos .gustos-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* Estilos específicos para los gustos individuales */
+#gusto#mora::before {
+    background-image: url('IMG/moraf.jpg');
+    
+}
+
+/* Estilos para la sección de contacto */
+#gusto#playa::before {
+    background-image: url('IMG/playa.jpg');
+}
+
+#gusto#f1::before {
+    background-image: url('IMG/f1.jpg');
+}
+
+#contact {
+    padding: 40px 20px;
+    background-color: #045bbf1c;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos para el pie de página */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #045bbf1c;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #045abf;
+}
+
+main {
+    padding-bottom: 60px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1001; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px; 
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal form label {
+    margin-top: 10px;
+}
+
+.modal form input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.modal form button {
+    padding: 10px 15px;
+    background-color: #045bbf5d;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal form button:hover {
+    background-color: #00c9d2;
+}
+
+main {
+    padding-bottom: 60px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1001; 
+    left: 0;
+}
+

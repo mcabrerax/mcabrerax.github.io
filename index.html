@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi Página Personal</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Sección del encabezado que contiene el título del sitio y el menú de navegación -->
+    <header>
+        <h1>Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#personal-data">Datos Personales</a></li>
+                <li><a href="#vision-mision">Visión y Misión</a></li>
+                <li><a href="#gustos">Mis Gustos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="javascript:void(0)" onclick="openModal('loginModal')">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Sección sobre mí -->
+        <section id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre Mí</h2>
+                    <p>Soy Marcos Cabrera, estudiante de Ingeniería en Sistemas cursando el primer semestre en la Universidad Mariano Gálvez Campus Villa Nueva, actualmente trabajo en la empresa "Da-Gas" como IT Junior.</p>
+                </div>
+                <div class="about-photo">
+                    <img src="i2.JPEG" alt="Foto de Marcos Cabrera">
+                </div>
+            </div>
+        </section>
+                <!-- Sección de datos personales -->
+        <section id="personal-data">
+            <div class="data-item">
+                <p><i class="fa-solid fa-cake-candles"></i>‎   25 Abril 2006</p>
+            </div>
+            <div class="data-item">
+                <p><i class="fa-solid fa-mobile"></i>‎   4976 1003</p>
+            </div>
+            <div class="data-item">
+                <p><i class="fa-solid fa-helmet-safety"></i> ‎  Da-Gas</p>
+            </div>
+            <div class="data-item">
+                <p><i class="fa-solid fa-school"></i>‎   Mariano Gálvez</p>
+            </div>
+            <div class="data-item">
+                <p><i class="fa-solid fa-envelope"></i> ‎  mcabrerax@miumg.edu.gt</p>
+            </div>
+        </section>
+                <!-- Sección de visión y misión -->
+        <section id="vision-mision">
+            <h2>Visión y Misión</h2>
+            <div class="vision-mision-content">
+                <div class="vision card">
+                    <h3>Visión</h3>
+                    <p>Visualizo un futuro en el que, a través del trabajo arduo, la dedicación y la pasión por el emprendimiento, haya creado una empresa innovadora y exitosa que no solo sea un líder en su industria, sino también un agente de cambio positivo en mi país y más allá.</p>
+                </div>
+                <div class="mision card">
+                    <h3>Misión</h3>
+                    <p>Mi misión es construir mi empresa sobre una base de valores sólidos, integridad y respeto por los demás. Me comprometo a trabajar incansablemente para alcanzar mis metas y objetivos, sin perder de vista mi propósito de contribuir al bienestar de mi país y expresar mi gratitud hacia mis padres.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Sección de gustos -->
+        <section id="gustos">
+            <h2>Mis Gustos</h2>
+            <div class="gustos-content">
+                <div class="gusto" id="mora">
+                    <h3>Mora</h3>
+                    <p>Desde que descubrí la música de Mora, el artista puertorriqueño Gabriel Mora Quintero, supe que había encontrado algo especial.</p>
+                </div>
+                <div class="gusto" id="playa">
+                    <h3>Playa</h3>
+                    <p>Disfruto pasar tiempo en la playa, relajándome bajo el sol y nadando en el mar.</p>
+                </div>
+                <div class="gusto" id="f1">
+                    <h3>Fórmula 1</h3>
+                    <p>Me apasiona la Fórmula 1, sigo atentamente las carreras y disfruto de la emoción de la velocidad y la competencia, Mi corredor favorito es Max Verstappen de RedBull Racing.</p>
+                </div>
+            </div>
+        </section>
+            <!-- Sección de contacto -->
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form action="mailto:tu-correo@example.com" method="post" enctype="text/plain">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!-- Pie de página con información de contacto y enlaces a redes sociales -->
+    <footer>
+        <p>Powered by @cabreerac</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/cabreerac/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/sirhybridd/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+        <!-- Modal para iniciar sesión -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p><a href="javascript:void(0)" onclick="openModal('registerModal')">Registrarme</a></p>
+        </div>
+    </div>
+        <!-- Modal para registrarse -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Registrarse</h2>
+            <form>
+                <label for="newUsername">Usuario:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+                <label for="newEmail">Correo Electrónico:</label>
+                <input type="email" id="newEmail" name="newEmail" required>
+                <label for="newPassword">Contraseña:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <button type="submit">Registrarme</button>
+            </form>
+        </div>
+    </div>
+        <div id="forgotPasswordModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('forgotPasswordModal')">&times;</span>
+                <h2>Recuperar Contraseña</h2>
+                <p>Para recuperar su contraseña, siga las siguientes instrucciones:</p>
+                <ol>
+                    <li>Ingrese su dirección de correo electrónico registrada.</li>
+                    <li>Revise su correo electrónico para un mensaje con el enlace de recuperación.</li>
+                    <li>Haga clic en el enlace y siga las instrucciones para restablecer su contraseña.</li>
+                </ol>
+                <button onclick="closeModal('forgotPasswordModal')">Cerrar</button>
+            </div>
+        </div>
+        <!-- Enlace al kit de Font Awesome para los iconos -->    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const loginModal = document.getElementById('loginModal');
+            const registerModal = document.getElementById('registerModal');
+            if (event.target == loginModal) {
+                loginModal.style.display = 'none';
+            }
+            if (event.target == registerModal) {
+                registerModal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
